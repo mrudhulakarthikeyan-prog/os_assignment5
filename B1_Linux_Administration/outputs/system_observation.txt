@@ -1,0 +1,108 @@
+===== DATE / HOST =====
+Tue Nov 24 03:12:32 UTC 2026
+LAPTOP-3PEQPCTG
+
+===== PROCESS SNAPSHOT (ps) =====
+    PID    PPID USER     STAT %CPU %MEM COMMAND
+   1240     660 mrudhula S+   10.0  0.0 bash
+   1241     660 mrudhula S+   10.0  0.0 tee
+      1       0 root     Ss    0.1  0.1 systemd
+     92       1 root     Ss    0.1  0.1 systemd-udevd
+    952       1 polkitd  Ssl   0.0  0.1 polkitd
+    947       1 root     Ssl   0.0  0.2 packagekitd
+    436       1 mrudhula Ss    0.0  0.1 systemd
+     46       1 root     S<s   0.0  0.2 systemd-journal
+    120       1 root     Ss    0.0  0.3 networkd-dispat
+    250       1 root     Ssl   0.0  0.4 unattended-upgr
+    660     653 mrudhula Ss    0.0  0.0 bash
+    166       1 root     Ssl   0.0  0.1 wsl-pro-service
+    259     112 _chrony  S     0.0  0.1 chronyd
+    680     679 mrudhula Ss+   0.0  0.0 bash
+    202       1 syslog   Ssl   0.0  0.0 rsyslogd
+
+===== TOP SNAPSHOT =====
+top - 03:12:32 up 10 min,  1 user,  load average: 0.07, 0.04, 0.00
+Tasks:  33 total,   1 running,  32 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7762.6 total,   6906.8 free,    598.8 used,    412.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7163.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1246 mrudhula  20   0    8164   5532   3528 R  10.0   0.1   0:00.01 top
+      1 root      20   0   24200  15540  11748 S   0.0   0.2   0:00.98 systemd
+      2 root      20   0    3180   2212   2072 S   0.0   0.0   0:00.03 init-sy+
+      6 root      20   0    3180   2040   1940 S   0.0   0.0   0:00.00 init
+     46 root      19  -1   50416  16848  15532 S   0.0   0.2   0:00.30 systemd+
+     86 systemd+  20   0   22448  14500  12012 S   0.0   0.2   0:00.07 systemd+
+     92 root      20   0   35756  12572   9420 S   0.0   0.2   0:00.93 systemd+
+    112 root      20   0    2888   2012   1880 S   0.0   0.0   0:00.05 chronyd+
+    113 root      20   0    4472   3144   2896 S   0.0   0.0   0:00.00 cron
+    114 message+  20   0    8808   5428   4704 S   0.0   0.1   0:00.09 dbus-da+
+    120 root      20   0   44112  29756  14612 S   0.0   0.4   0:00.26 network+
+
+===== MEMORY (free) =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       599Mi       6.7Gi       3.5Mi       412Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== VIRTUAL MEMORY (vmstat) =====
+procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
+ 1  0      0 7071568  16020 405924    0    0  1577   295  314    0  0  0 100  0  0  0
+ 0  0      0 7074808  16020 405992    0    0     0     0  170  105  0  0 100  0  0  0
+
+===== DISK I/O (iostat) =====
+Linux 6.18.33.2-microsoft-standard-WSL2 (LAPTOP-3PEQPCTG) 	11/24/26 	_x86_64_	(12 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.17    0.00    0.24    0.07    0.00   99.52
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+sda              1.11    250.35     0.70  38.70    0.55   225.23    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.06
+sdb              0.18     11.04     0.11  37.30    0.51    60.39    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.05
+sdc              0.15      3.10     0.00   0.00    0.17    20.94    0.00      0.01     0.00   0.00    3.50     2.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    4.00    0.00   0.00
+sdd             15.09   1310.46     8.04  34.77    0.81    86.84    2.19    294.75     3.32  60.25   11.84   134.39    0.22    741.50     0.04  14.29    0.41  3407.88    0.53    2.16    0.04   0.88
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.00    0.00    0.17    0.00    0.00   99.83
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+
+
+
+===== FILESYSTEM SPACE (df) =====
+Filesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  3.8G     0  3.8G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none           tmpfs    3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers        9p       476G  187G  290G  40% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  2.5G  954G   1% /
+none           tmpfs    3.8G   36K  3.8G   1% /mnt/wslg
+none           overlay  3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs         rootfs   3.8G  2.8M  3.8G   1% /init
+none           tmpfs    3.8G  532K  3.8G   1% /run
+none           tmpfs    3.8G     0  3.8G   0% /run/lock
+none           tmpfs    3.8G     0  3.8G   0% /run/shm
+none           overlay  3.8G   80K  3.8G   1% /mnt/wslg/versions.txt
+none           overlay  3.8G   80K  3.8G   1% /mnt/wslg/doc
+C:\            9p       476G  187G  290G  40% /mnt/c
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs          tmpfs    3.8G     0  3.8G   0% /tmp
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs          tmpfs    777M   12K  777M   1% /run/user/1000
+
+===== NETWORK SOCKETS (ss) =====
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess                                                                          
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*           uid:989 ino:962 sk:2001 cgroup:/system.slice/systemd-resolved.service <->
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*           uid:989 ino:960 sk:2002 cgroup:/system.slice/systemd-resolved.service <->
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*           ino:4107 sk:2003 cgroup:/ <->                                            
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*           ino:12396 sk:2004 cgroup:/system.slice/chrony.service <->                
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*           ino:5341 sk:2005 cgroup:/ <->                                            
+udp   UNCONN 0      0               [::1]:323          [::]:*           ino:5342 sk:2006 cgroup:/ v6only:1 <->                                   
+udp   UNCONN 0      0               [::1]:323          [::]:*           ino:12397 sk:2007 cgroup:/system.slice/chrony.service v6only:1 <->       
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*           uid:989 ino:963 sk:1001 cgroup:/system.slice/systemd-resolved.service <->
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*           ino:4108 sk:1 cgroup:/ <->                                               
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*           uid:989 ino:961 sk:1002 cgroup:/system.slice/systemd-resolved.service <->
+
+===== END =====

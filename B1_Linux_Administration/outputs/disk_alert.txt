@@ -1,0 +1,2 @@
+Disk usage for /: 1% (alert threshold: 80%)
+OK: filesystem usage is below the threshold

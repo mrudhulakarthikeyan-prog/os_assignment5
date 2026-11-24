@@ -1,0 +1,4 @@
+deployment,startup_seconds,memory_mib,disk_or_image_mib,requests_per_second,failed_requests,notes
+direct_linux,,,,,,
+virtual_machine,,,,,,
+docker_container,,,,,,

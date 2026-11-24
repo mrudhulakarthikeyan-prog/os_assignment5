@@ -1,0 +1,28 @@
+services:
+  portal:
+    build: .
+    image: result-portal:assignment5
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: compose
+    depends_on:
+      - database
+    cpus: 0.50
+    mem_limit: 256m
+    restart: unless-stopped
+
+  database:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: results
+      POSTGRES_USER: portaluser
+      POSTGRES_PASSWORD: change-this-local-lab-password
+    volumes:
+      - result_data:/var/lib/postgresql/data
+    cpus: 0.50
+    mem_limit: 512m
+    restart: unless-stopped
+
+volumes:
+  result_data:
